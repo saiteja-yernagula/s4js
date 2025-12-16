@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="console.log('hello from inline')">click</button>
+    <!-- 
+    javascript
+    features
+    uses
+    how js code works
+    how event loop works
+
+    how to insert javascript
+    1) inline-- embed the logic within the element
+    using onclick event 
+    <button onclick="console.log('hello from inline')">click</button>
+
+    2) internal
+    <script >js logic</script> define script tag at 
+    the bottom of the body 
+    how to run--open with live server -ctrl shift j
+
+    3) external
+    embed the logic within external document 
+
+    crate a file with .js extension
+    link using script src
+    <script src="demo.js"></script>
+
+    variables 
+    variable are the containers for storing data and 
+    the data could be anything
+
+    variables are defined  with var or let or const keywords followed
+    by variable name (identifier) and value will be assigned
+    using = operator
+
+    var a=10;
+    let b=20;
+    const c=30;
+    d=40;//automatic variable
+
+    identifier rules
+    1) variables names are case sensitive
+      let a=10
+      let A=20
+    2) variables can contain letters, numbers , dollar and undersccore
+      but it should start with letter , $ and _
+      let a=10
+      let $b=20
+      let _c=30
+    3) reserved words cannot be used as variable names
+    4) use camelCase -- userName ,userEmail
+
+    variable conventions
+    1) declaration- it is process of defining a variable name 
+    in an environment
+     var a;
+
+    2) undefined
+     a variable without an value
+      var a;
+      console.log(a)
+
+    3) not defined -error
+    an unexisiting variable
+    console.log(b)
+
+    4) assignment- it is a process of assigning a value 
+    in the next line after declartion
+    let a;
+    a=10;
+
+    reassignment
+    a=10
+    a=20
+
+    5) intialization - it is process of defining a variable
+    and assigning a value within the line
+    let a=10;
+
+    6) hoisting
+    it is a behavior where the declaration of an variable
+    and functions are moved to top even before the execution
+    
+    console.log(a)//undefined due to hoisting
+    var a;
+     a=10;
+
+     datatypes 
+     primitive datatypes
+     1) which stores single values
+     2) which are immutable
+     3) which stores in stack
+     4) which are pass by value and get by value
+
+     non primitive datatypes
+     1) which store multiple values
+     2) which are mutable
+     3) which stores in heap
+     4) which are get by reference and pass by reference
+
+     primitive
+1) strings
+     it is a collection of characters that are enclosed in
+     'single' or "double"  or `backticks` quotes
+     let str='hello world'
+     let tech='javascript'
+     console.log(str)//hello world
+     console.log(tech)//javascript
+
+     console.log(str[0])//h
+     str[0]='z'
+     console.log(str)//hello world- because of immutability
+
+ 2) number- everything is a number even if it is negative
+ or positive or floating values
+ let a=10
+ let b=-10
+ let c=10.9
+ console.log(typeof c)//number
+
+ 3) boolean - it always return true or falses
+ console.log(2==2)//true
+ console.log(2==3)//false
+
+ 4) undefined
+ 5) null - it is an intentional absence of an value
+ let userid;
+ console.log(userid+10)//nan
+
+ let userid=null;
+ console.log(userid+10)//10
+ 
+ non primitive
+ 1) array- it is used to store collection of items in a single
+   variable and can be accessed by numbered indexing
+   let arr=[1,2,3]
+   console.log(arr)//[1,2,3]
+   console.log(arr[0])//1
+   arr[0]='html'
+   console.log(arr)//['html',2,3]//are mutable
+
+ 2) objects
+ it is used to store the collection of data in key value pairs
+ and accessed by named indexing
+ let obj={
+ name:'john',
+ age:24
+ }
+ console.log(obj)//{entire obj}
+ console.log(obj.name)//dot notation-john
+ console.log(obj['age'])//square notation-24
+   
+ 3) function - it is a block of reusable code that is used
+ to perform one task
+ function greet(){
+ console.log('hello')
+ }
+ greet()
+
+
+   date
+   new map
+   new set
+   symbol
+   bigint 
+     -->
+  
+
+    <script>
+     function greet(){
+ console.log('hello')
+ }
+ greet()
+ greet()
+ greet()
+    </script>
+     
+</body>
+</html>
