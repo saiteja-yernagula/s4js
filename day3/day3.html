@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+
+        operators
+        operators are the symbols that are used to perform
+        mathematical operation on operands (values)
+
+        arithmetic operators
+        + - * / % ** ++ -- 
+    
+        a++ post increment- it will add one number but doent 
+                          reflect in same line
+       let a=10
+       console.log(a++)//10
+       console.log(a)//11
+
+        pre increment
+        ++a number will be added and reflected in the same line
+        let a=10
+       console.log(++a)//11
+       console.log(a)//11
+
+        post decrement
+       console.log(a--)//11
+       console.log(a)//10
+       pre decrement
+       console.log(--a)//9
+
+       assignment operators
+       it will assign a value and also perform one arithmetic
+       operation
+       = += -= *= **= /=
+
+       let a=10
+       a+=20.... a=a+20//30    
+       
+       let cart=0
+       cart+=500//0+500
+       cart+=900//500+400
+       cart+=1000//900+100
+
+       comparsion operators
+       it is used to compare the values and returns the boolean
+
+       == it is used to compare values not datatypes
+       console.log(2==2)//true
+       console.log(2==3)//false
+
+       === (strict equal to operator)
+       it is used to compare values and datatype
+       console.log(2===2)//true
+       console.log(2==="2")//false
+
+       < less than
+       console.log(10<20)//true
+       > greater than
+       console.log(10>20)//false
+    
+       <= lessthan or equal to
+       console.log(10<10)//false
+       console.log(10<=10)//true
+
+       >=greater than or equal to
+       console.log(10>10)//false
+       console.log(10>=10)//true
+
+       !=
+       console.log(10!=10)//false
+       console.log(10!=12)//true
+
+        !==
+        console.log(10!=='10')//true
+        console.log(10!==10)//false
+
+      how to take input from the user
+      let inp=prompt('enter a name')//it will take the value in a string
+      console.log(inp)
+
+      type conversion
+      converting one datatype another datatype
+      1) implicit conversion- it will automatically convert
+       one to another
+
+     console.log(10+10)//20
+     console.log("10"+10)//1010
+     console.log("10"-5)//5
+     console.log("10"*5)//50
+     console.log(true + true)//2
+     console.log(false + true)//1
+     console.log(false + false)//0
+
+
+    2) explicit conversion- we need the convert using
+     some methods
+    Boolean()
+    Number()
+    String()
+    
+    let inp=Number(prompt('enter something'))
+        let inp2=Number(prompt('enter val'))
+        console.log(inp+inp2)//add two numbers
+        console.log(typeof inp)//number
+
+        truthy values
+        1 100 -100--all numbers except 0
+        "hello"
+        [ ] 
+        {}
+        true
+
+        falsy values
+        0 
+        ""
+        null
+        undefined
+        false
+        NaN
+
+Boolean(1)//true
+Boolean(0)//false
+Boolean(-100)//true
+Boolean("")//false
+Boolean({})//true
+
+logical operators
+it is used to perform operation when there are 
+more than one value
+and it negatiate the value
+
+&&
+it returns true when all condtions are true
+console.log(true && true)//true
+console.log(true && false)//false
+console.log(false && false)//false
+||
+it returns true when even one conditon is true
+console.log(true || true)//true
+console.log(true || false)//true
+console.log(false || false)//false
+
+!
+it negatiate the value into false if it is true
+ and true if it is false
+console.log(!true)//false
+console.log(!false)//true
+
+ternary operator
+it is used to assign a value to a variable 
+based on a condition
+
+let val =condtiion ? 'expression':'expresion2'
+if cond is true exp1 is assigned
+if cond is false exp2 is assigned
+
+let num=20
+let val = num>0? 'positive' :'negative';
+console.log(val)//positive
+
+let num=20
+let val = num%2==0? 'even' :'odd';
+console.log(val)//even
+      
+nested ternary operator
+let inp=11
+let val= inp<0? 'negative number':
+          inp%2==0?'even':'odd';
+console.log(val)
+
+concatination operator +
+console.log( 'hello'+'world')//hello world
+console.log( '10'+10)//1010
+
+unary operator
+let inp=+prompt('enter a num')//number datatype
+let inp=-prompt('enter a num')//number and add - symbol
+
+special type
+typeof
+        
+        */
+
+let inp=-prompt('enter a num')//number and add - symbol
+console.log(inp)
+
+
+
+    </script>
+    
+</body>
+</html>
