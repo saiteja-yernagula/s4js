@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+    conditional statements
+    it allow us to execute a different blocks
+    bases on a conditons
+    it controls flow of the programs
+    it helps for decision making and logic implementation
+
+    if 
+    it is used to execute a block when the conditon is true
+    if (condition){
+    //block of code 
+    }
+
+    let val=10
+    if (val>0){
+    console.log(val, " is positive")
+    }
+
+    if else
+    it executes a if block when the condition is true
+    and else block when the condition is false
+    if (condtion){
+    //if block of code
+    }else{ 
+    //else block of code
+     }
+
+     let val=10
+    if (val>0){
+    console.log(val, " is positive")
+    }else{
+    console.log(val, " is negative")
+    }
+
+    if else if
+    it is used when there is a more than one conditions
+    it executes differen block based on a condtion
+    when one block is executed it will skip remaining blocks
+
+    if (condition){
+    //block1
+    }
+     else if(condition 2){
+     //block2
+     }
+     else if (condition 3){
+     //block3
+     }
+     else{
+     //last block
+     }
+     
+
+     
+     //  debugger;
+     let marks=65
+     if(marks>=90){
+      console.log('grade a')
+    }
+    else if (marks>=75){
+      console.log('grade b')
+    }
+    else if (marks>=45){
+      console.log('grade d')
+    }else{
+      console.log('fail')
+  }
+  
+  // nested if else
+  debugger;
+  let val =11
+  if (val>0){
+    if (val%2==0){
+      console.log(val, ' is even')
+    }
+    else{
+      console.log(val, ' is odd')
+  }
+}
+else{
+  console.log(val, ' is negative')
+}
+
+
+switch case
+it is used execute a block based on matching case
+it evaluates the expression and it will match the cases based
+on strict equal to operator ===
+break - it is used to terminate the block  
+   if we omit break it will lead to execute remaining cases
+
+if no case is matched then default case will be executed
+switch (expression){
+case val:
+   //block of code
+   break;
+case val:
+   //block of code
+   break
+default:
+  //default block
+}
+*/
+
+switch (3+2){
+  case 1 : 
+       console.log('1 is matched')
+       break;
+  case 2:
+       console.log('2 is matched')
+       break;
+  case "5":
+       console.log('5 is matched')
+       break;
+  case 5:
+       console.log('2nd 5 is matched')
+       break;
+  default:
+    console.log('default one is matched')
+}
+
+
+let num1=+prompt('enter a num1')
+let num2=+prompt('enter a num2')
+let op=prompt('enter a symbol')
+
+switch(op){
+  case "+":
+    console.log(num1+num2)
+    break;
+  case "-":
+    console.log(num1-num2)
+    break;
+  case "*":
+    console.log(num1*num2)
+    break;
+  default :
+   console.log('invalid operator')
+}
+</script>
+
+</body>
+</html>
