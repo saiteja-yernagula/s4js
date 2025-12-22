@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clck(1)">1</button>
+    <button onclick="clck(2)">2</button>
+    <script>
+        /*
+
+functions
+it is piece of reusable block of code
+that is used to perform a specific task 
+and executes when something invokes it
+
+functions are defined with function keyword followed by func name
+followed by parenthesis followed by block of code
+
+syntax
+//function declaration
+function funname(){
+//block of code
+}
+
+//function invoking- name followed by ()
+funname()
+
+function sum(){
+console.log(2+3)
+}
+sum()//static-5
+sum()//static-5
+
+
+
+paranthesis in function declaraton may contain parameters
+and paranthesis in function calling may contain arguments
+inside functions they behave as local variables
+      
+//dynamic
+function sum(a,b){//parametes
+console.log(a+b)
+}
+sum(2,3)//5-argumements
+sum(5,3)//8-argumements
+
+//dynamic buttons
+function clck(n){
+    alert(n,' is clicked')
+}
+<button onclick="clck(1)">1</button>
+<button onclick="clck(2)">2</button>
+
+default arguments
+function sum(a=0,b=0){//parametes
+console.log(a+b)
+}
+sum(2,3)//5-argumements
+sum(5,3)//8-argumements
+sum()//0
+
+function greet(n='dear'){
+    console.log('hello ',n,' welcome to our page')
+}
+greet('john')
+greet('jessy')
+greet()
+
+key points 
+1) function names stores function defintion
+    function fun(){
+        console.log('hello')
+    }
+    console.log(fun)
+2) logging the function calling will give you the return value
+  return -it is used to terminate the function 
+          it is used to store the end value of a function
+3) statements after return keyword won't be executed
+
+function one(a,b){
+    console.log('operation')
+    return a+b//stores 3  
+}
+
+function two(a,b){
+    return a-b//stores 5
+}
+inp1=one(1,2)//return value
+inp2=two(15,10)//rv
+console.log(inp1*inp2)//15-using two inputs and generation end output
+
+
+one(1,2)//execute the function
+console.log(one)//will give you the defintion
+console.log(one(1,2))//it will execute function and also returns return value
+
+4) named funcitons can only be hoisted
+
+fun()//hi
+
+//declartion -hoisitng- declaration of a function are moved to top
+function fun(){
+    console.log('hi')
+}
+5) in js functions are called as first class functions
+means a function can be assigned as a value to an variable and
+ passed as an argument
+
+*/
+</script>
+
+</body>
+</html>
