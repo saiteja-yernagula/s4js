@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+
+        functions - reusable block of code
+
+        declaration
+        invoking
+
+        keypoints
+        1) fun name store fun definiton
+         console.log(fun)
+        2) logging of the function calling will give u the return 
+        value
+        return - to terminate and to store end value
+        console.log(fun())//execute and returns the value
+        3) statements after return wont be execute 
+        4) named function can only be hoisted
+        5) in js functions are called as first class functions
+        we can assign a func as an value
+        we can pass it as an argument
+
+        1) named functionsp-can only be hoisted
+        2) anonymous function
+
+       let a= function(){
+        console.log('hello world')
+       }
+        when a function is defined without a function name
+        console.log(a)//definiton
+       a()//execution
+       console.log(a())//execution +undefined
+
+       3) arrow functions
+       it is more concise way of writing a function 
+       in simple syntax
+
+       let a=(parameters)=>{
+       //block of code
+       }
+       a(arguments)
+
+       let sum=(a,b)=>{
+       console.log(a+b)
+       }
+       sum(1,2)//3
+       
+       we can ommit paranthesis if we have single param
+       we can ommit {} if we have a single stament
+       let sum=a=>console.log(a+a)
+
+       it will add return keyword implicity if we omit {}
+       let sum=a=>a+a
+       console.log(sum(2))
+
+       4) IIFE (immediate invoking function expression) or self invoking
+       self invoking functions are the function
+       which will execute immediately as soon as defined
+       syntax
+       (function defintion)()
+
+        (function (){
+         console.log('immediately invoked')
+        })()
+
+        5) callback function
+        when a function definition is passed to  another
+        function as an argument and later execute on outer function
+
+        function one(n){
+        console.log(n)//definiton
+        n()//execution
+        }
+        function two(){
+          console.log('funciton two')
+        }
+        one(two)
+
+
+
+
+
+       
+       */ 
+
+       function cart(a){
+        console.log('products are added to cart')
+        a(order)
+       }
+  
+       function payment(b){
+        console.log('payment completed ')
+        b()
+       }
+
+       function order(){
+        console.log('order placed')
+       }
+       cart(payment)
+    // hof(callback,callback)- higher order function
+    // is a function which takes one or more functions
+    // as an arguments
+       
+      
+    </script>
+</body>
+</html>
