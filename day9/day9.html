@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        scopes
+        it is a life or a accessibility of an variable
+
+        global scopes
+        variables that are declared at global level have a
+        global means we can access anywhere in the program
+
+        var a=10
+        let b=20
+        const c=30
+        console.log(a,b,c)
+
+        {
+        console.log(a,b,c)
+        }
+        function fun(){
+        console.log(a,b,c)
+        }
+        fun()
+
+        block scope
+        variables that are defined within a block {} can 
+        able to access within the block only and outside 
+        it throws the error
+        let and const have block scope
+        {
+           var a=10
+           let b=20
+           const c=30
+           console.log(a,b,c)
+       }
+       console.log(a)//10-var doesn't have a block scope
+       console.log(c)//error-have a block scope
+
+       local scope - function scope
+       variables that are defined within a function can only
+       be accessed within the function only and outside it throws
+       error
+        var ,let and const have local scope
+        function fun(){
+        var a=10
+        let b=20
+        const c=30
+        console.log(a)
+       }
+       fun()
+       console.log(a)//error
+       console.log(b)//error
+       debugger
+       var ag=10
+       let bg=20
+       const cg=30
+       console.log(ag,bg,cg)
+       
+       {
+        var ab=10
+       let bb=20
+       const cb=30
+       console.log(ab,bb,cb)
+       }
+
+       function fun(){
+        var af=10
+       let bf=20
+       const cf=30 
+       console.log(af,bf,cf);
+       
+       }
+       fun()
+
+
+       var let const diffferences
+       variable declaration
+       var a;
+       redeclaration
+       var a=20;
+
+       assignment
+       var b
+       b=10
+       b=20//re assignment
+
+       initialization
+       var c=30
+
+       hoisting
+       console.log(a)//undefined
+       var a=10
+
+       var
+       redeclaraion is allowed
+       assignment is allowed
+       scopes - global and local
+       var can be hoisted
+
+       let 
+       redeclaration is  not allowed
+       assignment  and reassignment is allowed
+       scope - global,block and local
+       let can be hoisted but not intialized with undefined it 
+          stays within tdz- tempororial dead zone
+
+       const
+       redeclaraion is not allowed
+       assignment is not allowed
+       scope - global,block and local
+       const can be hoisted but not intialized with undefined it 
+          stays within tdz- tempororial dead zone
+
+   redclaration
+   var a=10;
+   var a=20;
+
+   let b=20;//error
+   let b=30;//error
+
+   const c=40;//error
+   const c=50//error
+
+//assignmemnt
+var a;
+a=10;
+
+ let b;
+b=20;
+b=30;
+
+const c;
+c=30;//error
+c=70;//reassignment error
+
+hoisting
+console.log(a)//undefined
+      var a=10;
+
+console.log(a)//error
+      let a=10;
+console.log(a)//error
+      const a=10;
+        */ 
+
+
+ 
+       
+    </script>
+    
+</body>
+</html>
