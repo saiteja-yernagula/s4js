@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+    gec
+    global execution context
+
+    var a=10
+    let b=20
+    function fun(){
+    let a=20
+    var ad=30
+
+    console.log('hello')}
+    fun()
+    // scope chaining
+    let a=10
+    function fun(){
+        // let a=20
+        {
+            // let a=30
+            console.log(a)
+        }
+    }
+    fun()
+    // console.log(outer)//defintion
+    // outer()//outer fun--calling
+    // console.log(outer())//outer + innerfun--exection + return val
+
+    closure
+Closure is 
+When an inner function have access and rememeber the variable
+which is declared in outer function even after the execution
+of the outer function .
+    */
+   function outer(){
+        let count=0
+        console.log('outer fun')
+        function inner(){
+            console.log('inner fun')
+            console.log(count)
+            count++
+        }
+        return inner
+    }
+
+    // four executions
+    // outer()()//0
+    // outer()()//0
+
+    //only three executions
+    let a=outer()
+    a()//0
+    a()//1
+    </script>
+</body>
+</html>
