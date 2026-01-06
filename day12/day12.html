@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>to do list</h1>
+<button onclick="adddata()">add task</button>
+<ul>
+
+</ul>
+    <!-- <h1>heading1</h1>
+    <h1 id="demo"><b>heading2</b></h1>
+
+    <div class="container"></div>
+    <a href="">link</a>
+    <a href="">link</a>
+    <a href="">link</a>
+    <a href="">link</a>
+
+    <form action="">
+        <input type="text">
+    </form>
+    <form action="">
+        <button>send</button>
+    </form>
+    <img src="" alt=""> -->
+    <script>
+/*
+dom
+accessing methods
+
+how to access content
+method.property
+document.getElementsByTagName('h1')[1].innerHTML
+
+let headings = document.getElementsByTagName('h1')
+console.log(headings[1].innerHTML)
+  
+let heading2=document.getElementById('demo')
+console.log(heading2.innerText)//it will give content only
+console.log(heading2.innerHTML)//it will give content and html tags
+
+how to modify content
+method.property='new content'
+let heading2=document.getElementById('demo')
+heading2.innerText='<u>hello world</u>'
+heading2.innerHTML='<u>hello world</u>'
+
+how to add styles
+method.style.property='value'
+let heading2=document.getElementById('demo')
+heading2.style.color='blue'
+heading2.style.backgroundColor='black'
+
+//document level objects
+console.log(document.scripts)//it will return the scripts in a collection
+console.log(document.body)//it will return the single body elemet
+console.log(document.head)//it will return the head elemet
+console.log(document.title)//it will return the title name
+console.log(document.links)//it will return the anchor tags in collection
+console.log(document.forms)//it will return the forms in a collection 
+console.log(document.images)//it will return the images in a collection 
+
+
+how to create element dynamically
+let heading=document.createElement('h1')
+heading.innerHTML='some content from dom'
+console.log(heading)
+
+// append - it will add the element to the page
+1st way
+let container=document.querySelector('.container')
+container.append(heading)
+
+2nd way
+document.body.append(heading)
+
+create a list like html css js
+let ul=document.createElement('ul')
+let li1=document.createElement('li')
+let li2=document.createElement('li')
+let li3=document.createElement('li')
+li1.innerText='html'
+li2.innerText='css'
+li3.innerText='js'
+ul.append(li1,li2,li3)
+document.body.append(ul)
+
+let ul=document.createElement('ul')
+ul.innerHTML='<li>html</li> <li>css</li> <li>js</li>'
+document.body.append(ul)
+
+*/
+
+function adddata(){
+    let ul=document.querySelector('ul')
+    let inp=prompt('enter a task')
+let li=document.createElement('li')
+li.innerHTML=inp
+ul.append(li)
+
+}
+
+
+    </script>
+</body>
+</html>
