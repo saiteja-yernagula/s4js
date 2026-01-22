@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/008/951/892/small/cute-puppy-pomeranian-mixed-breed-pekingese-dog-run-on-the-grass-with-happiness-photo.jpg" alt=""> 
+    
+    <div></div>
+    <button onclick="fun()">click</button>
+    <script>
+        /*
+        // dom - document object model - 
+        html conten,style,strucute
+        methods and properties
+
+        1) document level object
+        2) element level objects
+
+        methods - for accessing
+    a= document.getElementById('demo')
+     document.getElementsByTagName('h1')
+     document.getElementsByClassName('el')
+     document.querySelector('.el')
+     document.querySelectorAll('.el')
+
+     for accessing content- proper
+     a.innerText
+     a.innerHTML
+     
+
+     how to modify 
+     a.innerText='new content'
+     a.innerHTML='<b>new content</b>'
+
+
+     how to add a styling
+     a.style.color='red'
+     a.style.marginTop='20px'
+
+
+    how to deal with the classes
+    a.classList.add('el')
+    a.classList.remove('el')
+    a.classList.toggle('el')
+
+    how to set an attribute
+    a.setAttribute('src','cat.jpg')
+
+    how to create an element
+    let h1=document.createElement('h1')
+    h1.innerText='new cont'
+    document.body.append(h1)
+
+
+
+
+     
+        */ 
+
+        let a=['html','css','js']
+for (i of a){
+    let div=document.createElement('div')
+    div.innerText=i
+    document.body.append(div)
+    console.log(div);
+}
+        let div=document.querySelector('div')
+        c=0
+        div.innerText=a[0]
+
+
+       function fun(){
+        c++
+        div.innerText=a[c]
+       }
+
+
+
+    </script>
+</body>
+</html>
