@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text">
+        <input type="text">
+        <button type="submit">submit</button>
+    </form>
+
+    <input type="text" id="inp">
+    <div id="container"></div>
+    <script>
+        /*
+        types of events
+        mouse events
+
+     
+       
+        let form=document.querySelector('form')
+        form.addEventListener('submit',(e)=>{
+            //it is used to stop the default submission
+            e.preventDefault()
+            console.log('hello world')
+
+            // 1st way-using documennt objects
+        // console.log(document.forms[0][0].value)
+        // console.log(document.forms[0][1].value)
+
+        // 2nd way-using event
+        // console.log(e.target[0].value)
+        // console.log(e.target[1].value)
+
+        // 3rd way-using methods
+        let inp=document.getElementsByTagName('input')
+        console.log(inp[0].value)
+        console.log(inp[1].value)
+        })
+
+        keydown 
+        keyup
+
+   keyboard events
+        */
+    // document.addEventListener('keyup',(e)=>{
+    //     console.log(e.key)
+    //     if(e.key=='Enter'){
+    //         alert('form is submmited')
+    //     }
+    // })
+
+    // how to hide console shortcuts
+//     document.addEventListener('keydown',(e)=>{
+// if(e.shiftKey && e.ctrlKey && (e.key=='I' || e.key=='J')){
+//             alert('you cant console my code')
+//             e.preventDefault()
+// }
+//         if(e.key='F12'){
+//             e.preventDefault()
+//         }
+//     })
+// how to hide console menu
+    // document.addEventListener('contextmenu',(e)=>{
+    //     alert('again you cant')
+    //     e.preventDefault()})
+
+// how to add keydown event to the input
+document.getElementById('inp').addEventListener("keydown",(e)=>{
+  document.getElementById('container').innerHTML+=e.key
+})
+    </script>
+</body>
+</html>
