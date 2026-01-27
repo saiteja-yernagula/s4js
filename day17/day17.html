@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tempora expedita vel provident sunt illum error veniam reprehenderit ipsam earum cumque delectus numquam perspiciatis, commodi aliquid modi debitis! Molestias, maiores.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tempora expedita vel provident sunt illum error veniam reprehenderit ipsam earum cumque delectus numquam perspiciatis, commodi aliquid modi debitis! Molestias, maiores.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tempora expedita vel provident sunt illum error veniam reprehenderit ipsam earum cumque delectus numquam perspiciatis, commodi aliquid modi debitis! Molestias, maiores.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tempora expedita vel provident sunt illum error veniam reprehenderit ipsam earum cumque delectus numquam perspiciatis, commodi aliquid modi debitis! Molestias, maiores.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tempora expedita vel provident sunt illum error veniam reprehenderit ipsam earum cumque delectus numquam perspiciatis, commodi aliquid modi debitis! Molestias, maiores.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tempora expedita vel provident sunt illum error veniam reprehenderit ipsam earum cumque delectus numquam perspiciatis, commodi aliquid modi debitis! Molestias, maiores.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tempora expedita vel provident sunt illum error veniam reprehenderit ipsam earum cumque delectus numquam perspiciatis, commodi aliquid modi debitis! Molestias, maiores.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tempora expedita vel provident sunt illum error veniam reprehenderit ipsam earum cumque delectus numquam perspiciatis, commodi aliquid modi debitis! Molestias, maiores.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tempora expedita vel provident sunt illum error veniam reprehenderit ipsam earum cumque delectus numquam perspiciatis, commodi aliquid modi debitis! Molestias, maiores.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tempora expedita vel provident sunt illum error veniam reprehenderit ipsam earum cumque delectus numquam perspiciatis, commodi aliquid modi debitis! Molestias, maiores.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tempora expedita vel provident sunt illum error veniam reprehenderit ipsam earum cumque delectus numquam perspiciatis, commodi aliquid modi debitis! Molestias, maiores.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tempora expedita vel provident sunt illum error veniam reprehenderit ipsam earum cumque delectus numquam perspiciatis, commodi aliquid modi debitis! Molestias, maiores.</h1>
+    <input type="text">
+    <div id="container"></div>
+    <select name="" id="skill">
+        <option value="html">html</option>
+        <option value="css">css</option>
+        <option value="js">js</option>
+    </select>
+    <div></div>
+    <input type="color">
+    <form action="">
+        <input type="text">
+        <button type="submit">submit</button>
+    </form>
+<script>
+/*
+
+mouse events
+keyboard events
+
+
+form events
+submit
+let form=document.querySelector('form')
+form.addEventListener('submit',(e)=>{
+    e.preventDefault()
+    console.log(e.target[0].value)
+})
+
+change
+    <input type="color">
+let inp=document.querySelector('input')
+inp.addEventListener('change',(e)=>{
+    console.log(e.target.value)
+    document.body.style.background=e.target.value
+})
+
+
+
+    <select name="" id="skill">
+        <option value="html">html</option>
+        <option value="css">css</option>
+        <option value="js">js</option>
+    </select>
+    <div></div>
+
+ let skill=document.getElementById('skill')
+skill.addEventListener('change',()=>{
+    console.log(skill.value)
+    let div=document.querySelector('div')
+    div.innerHTML="you are selecting " +skill.value
+})
+
+
+focus & blur
+let inp1=document.querySelector('input')
+inp1.addEventListener('focus',()=>{
+    inp1.style.background='yellow'
+})
+
+inp1.addEventListener('blur',()=>{
+    inp1.style.background='red'
+})
+
+input
+let inp1=document.querySelector('input')
+inp1.addEventListener("input",()=>{
+    let container=document.querySelector('#container')
+    container.innerHTML=inp1.value
+})
+
+window events
+
+load
+resize 
+scroll
+
+        
+*/
+
+window.addEventListener('load',()=>{
+alert('today we have 50% off on our products')
+})
+
+window.addEventListener('resize',()=>{
+    console.log(window.innerWidth);
+    if( window.innerWidth<550){
+        document.body.style.background='red'
+    }
+})
+
+window.addEventListener('scroll',()=>{
+    if(window.scrollY>400){
+        document.body.style.background='green'
+    }
+})
+</script>
+</body>
+</html>
