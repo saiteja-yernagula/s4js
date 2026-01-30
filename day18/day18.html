@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+/*
+array
+it is a special type of object that is used to 
+store the data in a collection
+it is used to group the data
+it is used to store ,update and delete the data
+
+features
+1) order collection
+2) mutable
+3) homogeneous and heterogeneous
+4) dynamic sizing
+5) multi dimensional array
+
+how to create an array
+let arr=['html','css','js']
+let arr1=new Array()
+
+how to access
+console.log(arr)
+
+based on numbered indexing-how to access an item
+console.log(arr[0])
+
+how to add a new value
+arr[3]='react'
+
+how to update
+arr[2]='javascript'
+
+how to find the length
+console.log(arr.length)
+
+how to iterate
+for(i=0;i<arr.length;i++){
+console.log(i)//indexes
+console.log(arr[i])//values
+}
+
+for (i in arr){
+console.log(i)//indexes
+console.log(arr[i])//values
+}
+
+
+
+// //shallow copy
+let a=[10,11,12]
+let b=a//here values are not assigned 
+// references are assigned
+
+b[0]='html'
+console.log(a);
+console.log(b);
+
+//deep copying- using spread operator
+let a=[10,11,12]
+let b=[...a]// values are  assigned 
+
+b[0]='html'
+console.log(a);
+console.log(b);
+
+
+// destructuring
+// it is used extract the values from an array or obj
+// and assigning to an variable
+let a=[1,2,3]
+let [one,two,three]=arr
+
+let arr=[['html','css','js'],['python','django']]
+let [frontend,[programming,framework]]=arr
+console.log(programming);
+console.log(framework);
+
+methods
+1) length-  it is used to return the no of items
+let arr=[1,2,3]
+console.log(arr.length)
+
+2) at()
+it is used to return the item at a specified index
+it will take both postiive and negative integers
+let arr=[1,2,3]
+console.log(arr.at(0))
+console.log(arr.at(-1))
+
+3) concat -it is used to merge two or more arrays
+let frontend=['html','css','js']
+let backend=['python','django']
+let database=['mysql']
+let fullstack=frontend.concat(backend,database)
+console.log(fullstack);
+
+4) splice
+it is used to manage the items in array by adding 
+,removing and modifying in the original array
+
+syntax
+arr.splice(startindex,deltecount,'newcontten','newcont')
+
+let fullstack=frontend.concat(backend,database)
+
+// how to add
+fullstack.splice(3,0,'react')
+
+// how to update
+fullstack.splice(4,3,'mongodb','node js','express js')
+
+//how to delete
+fullstack.splice(0,4)
+console.log(fullstack);
+
+</script>
+</body>
+</html>

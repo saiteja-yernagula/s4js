@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD with Array</title>
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input {
+      padding: 8px;
+      font-size: 16px;
+    }
+    button {
+      margin-left: 5px;
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+    li {
+      margin-top: 10px;
+      list-style: none;
+    }
+  </style> 
+</head>
+<body>
+    <input type="text">
+    <button onclick="addtask()">add task</button>
+    <ul></ul>
+  <script>
+    function addtask(){
+        let inp=document.querySelector('input')
+
+        let ul=document.querySelector('ul')
+        let li=document.createElement('li')
+        let span=document.createElement('span')
+        let btn1=document.createElement('button')
+        let btn2=document.createElement('button')
+
+        span.innerHTML=inp.value
+        btn1.innerHTML='upd'
+        btn2.innerHTML='del'
+
+        btn1.addEventListener('click',()=>{
+            let userinp=prompt('enter a new value')
+            span.innerHTML=userinp
+        })
+
+        btn2.addEventListener('click',()=>{
+        li.remove()
+        })
+
+        li.append(span,btn1,btn2)
+        ul.append(li)
+        inp.value=''-
+    }
+  </script>
+</body>
+</html>
