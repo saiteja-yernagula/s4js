@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+ Student Management System
+  1. Add Student
+  2. View All Students
+  3. Update Student
+  4. Delete Student
+  5. Search Student
+  6. Sort Students
+  7. Reverse List
+  8. Exit
+  Enter your choice (1-8): 
+
+    -->
+    <script>
+       let std=['jessy']  
+    let flag=true 
+    while(flag){
+        let inp=prompt('enter a option ')
+        
+        switch(inp){
+            case '1':
+                let newstd=prompt('enter a new name')
+                std.push(newstd)
+                break
+            case '2':
+                console.log(std)
+                break
+            case '3':
+                let ename=prompt('enter a name which u want to update')
+                let enameind=std.indexOf(ename)
+                if(enameind==-1){
+                    console.log('student not found')
+                }else{
+                    let newname=prompt('enter a updated name')
+                    std.splice(enameind,1,newname)
+                    console.log('its updated')
+                }
+                
+                break;
+            case '4':
+                let delname=prompt('enter a name u want to delet')
+                let delind=std.indexOf(delname)
+                if(delind==-1){
+                    console.log('student not found')
+                }
+                else{
+                    std.splice(delind,1)
+                    console.log('deleted succesfully')
+                }
+                break;
+            case '5':
+                let searchname=prompt('enter a name to find')
+                if(std.includes(searchname)){
+                    console.log(searchname,' found')
+                }else{
+                    console.log('student not found')
+                }
+                break;
+            case '6':
+                std.sort()
+                console.log('sorted succesfuly')
+                break
+            case '7':
+                std.reverse()
+                console.log('reversed')
+                break;
+
+                
+            case '8':
+                console.log('operation exited')
+                flag=false
+                break
+        }
+    }
+    </script>
+</body>
+</html>

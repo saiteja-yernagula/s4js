@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+       
+
+
+        
+        
+        let arr=[10,2,3,7,22]
+        let min=arr[0]
+        let max=arr[0]
+        let minind=0
+        let maxind=0
+        for (i in arr){
+            if(arr[i]<min){
+                min=arr[i]
+                minind=i 
+            }
+            if(arr[i]>max){
+                max=arr[i]
+                maxind=i
+            }
+        }
+
+        if(minind<maxind){
+            console.log('min is first')
+        }
+        else{
+            console.log('max is first')
+        }
+        
+        
+
+        
+        let arr=[2,3,4,4,5,5]
+        let dummy=[]
+
+        for (i of arr){
+            console.log(i)
+            if(!dummy.includes(i)){
+                dummy.push(i)  
+            }
+        }
+
+        if(dummy.length==arr.length){
+            console.log('doesnt contain duplicates')
+        }else{
+            console.log('contain duplicates')
+        }
+        
+        */ 
+       let data=[3,4,5,6,7]
+       let out =[]
+        function isprime(n){
+         for (i=2;i<n;i++){
+            if(n%i==0){
+                return false 
+            }
+        }
+        return true 
+        }
+       
+        for (i of data){
+            out.push(isprime(i))
+        }
+        
+        console.log(out)
+        
+        
+        
+        
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        hof
+        higher order functions are the functions
+        that takes one function as a argument
+        and returns result with modified value
+
+        forEach
+        map
+        filter
+        reduce
+        sort
+        every 
+        some 
+        find
+
+foreach
+it is used to iterate an elements of an existing array
+by applying provided function for every element
+and it doesn't return anything
+
+let arr=['html','css','js']
+
+// syntax
+arr.forEach((val,ind,ar)=>{
+console.log(val)//values
+console.log(ind)//indexes
+console.log(ar)//complete array
+})
+
+
+map
+it is used to transform an elements of an array
+by applying a provided function for every element
+and returns the transformed array
+and it always creates new array
+
+let arr=[2,3,4]
+let doublearr=arr.map((v,i,a)=>{
+return v+v
+})
+console.log(double)
+     
+let arr=['html','css','js']
+let newarr=arr.map((val)=>{
+    return 'frontendskill- '+val
+})
+console.log(newarr)
+
+filter
+it is used to create a filtered array by applying
+boolean function for every elements and returns
+filtered array
+
+let arr=[1,2,3,4,5,6,7,8]
+let evenarr=arr.filter((val)=>{
+return val%2==0
+})
+console.log(evenarr);
+    
+reduce 
+it is used to perform a calculations on an array
+by applying provided function and returns single value
+
+let arr=[1,2,3]
+let totalsum=arr.reduce((acc,val,ind,ar)=>{
+    return val+acc
+},0)
+console.log(totalsum);
+
+
+
+sort 
+it is used to sort the element of array by applying
+provided function
+
+let arr=[10,2,1,11,21,2]
+let sortarr=arr.sort((a,b)=>{
+return a-b//asscending
+return b-a//descending
+})
+console.log(sortarr)
+
+ if a-b is negative it will keep a before b
+ if a-b is positive it will swap b before a
+        */
+
+  let data=[
+            {
+                name:'john',
+                age:25,
+                branch:'cse'
+            },
+            {
+                name:'jessy',
+                age:19,
+                branch:'cse'
+            },
+            {
+            name:'jack',
+            age:20,
+            branch:'civil'
+        },
+        {
+            name:'jenny',
+            age:17,
+            branch:'cse'
+        }
+    ]
+
+let filterbyage =data.filter((val)=>{
+return val.age>18
+})
+console.log(filterbyage);
+
+
+let filterbybranch =data.filter((val)=>{
+return val.branch=="civil"
+})
+console.log(filterbybranch);
+
+
+let sortedarr=data.sort((a,b)=>{
+ return a.age-b.age
+})
+console.log(sortedarr);
+
+
+Task 1: Double the Numbers
+Objective: Double each number in an array.
+ use the map method to create a new array where each number is doubled.
+
+Task 2: Using map
+Objective: Create a new array with each element squared.
+ use the map method to create a new array 
+ where each element is the square of the original element.
+
+Task 3: Using filter
+Objective: Filter out even numbers.
+Instructions: Given an array of numbers, use the filter method 
+to create a new array that contains only the odd numbers.
+
+Task 4: Filter Long Words
+Objective: Filter out words longer than 5 characters.
+Instructions: Given an array of words, use the filter method
+ to create a new array that contains only words with 5 or fewer characters.
+
+Task 5: Sum of Numbers
+Objective: Calculate the sum of all numbers in an array using reduce method.
+Instructions: Given an array of numbers, 
+use the reduce method to calculate the sum of all the numbers.
+
+Task 6: Calculate Average
+Objective: Calculate the average of an array of numbers.
+Instructions: Given an array of numbers, 
+use the reduce method to calculate the average.
+
+Task 7: Filter Adults
+Objective: Filter out people who are under 18.
+Instructions: Given an array of objects representing people, use the filter method to create a new array that contains only people who are 18 or older.
+const people = [
+  { name: "John", age: 17 },
+  { name: "Jane", age: 22 },
+  { name: "Jim", age: 15 },
+  { name: "Jack", age: 19 }
+];
+// [{ name: "Jane", age: 22 }, { name: "Jack", age: 19 }]
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
