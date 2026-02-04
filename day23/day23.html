@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+
+    hof
+    foreach
+    map
+    filter 
+    reduce 
+    sort 
+
+    some
+    it will return true if any of an element in an 
+    array satisfies the condition
+
+    let arr=[1,2,3,4,5,7]
+        let data=arr.some((val)=>{
+            return val<1
+        })
+        console.log(data)
+
+    every
+    it will return true only if all the elements
+    satisfies the condition otherwise false
+
+        let arr=[1,2,3,4,5,7]
+        let data=arr.every((val)=>{
+            return val<8
+        })
+        console.log(data)
+
+    find
+    it is used to return the first precedence element
+    in a set of elements
+    let arr=[1,3,4,5,7]
+        let data=arr.find((val)=>{
+            return val%2==0
+        })
+     console.log(data)
+
+
+     -->
+  
+     
+    <script>
+/*
+
+const products = [
+  { name: "Laptop", price: 70000, rating: 4.5, inStock: true },
+  { name: "Phone", price: 35000, rating: 4.2, inStock: true },
+  { name: "Tablet", price: 25000, rating: 3.8, inStock: true },
+  { name: "Headphones", price: 4000, rating: 4.8, inStock: true },
+  { name: "Smartwatch", price: 15000, rating: 4.0, inStock: false },
+];
+add gst
+filter based on rating
+total inventory cost
+sort by price and rating
+check stock
+verify ratings
+
+*/ 
+const products = [
+  { name: "Laptop", price: 70000, rating: 4.5, inStock: true },
+  { name: "Phone", price: 35000, rating: 4.2, inStock: true },
+  { name: "Tablet", price: 25000, rating: 3.8, inStock: true },
+  { name: "Headphones", price: 4000, rating: 4.8, inStock: true },
+  { name: "Smartwatch", price: 15000, rating: 4.0, inStock: false },
+];
+// products.forEach((val)=>{
+// console.log(val)
+// })
+
+// let data=products.map((val)=>{
+//     return {...val,gst:val.price*1.18}
+// })
+// console.log(data)
+
+// let fildata=products.filter((val)=>{
+//     return val.rating>4.1
+// })
+// console.log(fildata)
+
+// let total=products.reduce((acc,val)=>{
+//     return acc+val.price
+// },0)
+// console.log(total)
+
+// let sortbyprice=products.sort((a,b)=>{
+//     return a.price-b.price
+// })
+// console.log(sortbyprice);
+
+let  sortbyrating=products.sort((a,b)=>{
+    return b.rating-a.rating
+})
+console.log(sortbyrating);
+
+let checkstock=products.some((val)=>{
+return val.inStock==false
+})
+console.log(checkstock);
+
+
+let checkrating=products.every((val)=>{
+return val.rating<4
+})
+console.log(checkrating)
+
+//multip le hofs
+let arr=[10, 25, 30, 45, 50]
+// let data=arr.map((val)=>{
+// return val+val
+// }).filter((val)=>{
+// return val>60
+// })
+// console.log(data);
+
+let data=arr.map(val=>val+val).filter(val=>val>60)
+console.log(data);
+
+    </script>
+
+
+
+</body>
+</html>
