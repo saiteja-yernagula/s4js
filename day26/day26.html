@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+ /*
+ strings
+ it is used to store the collection of
+ characters that are enclosed
+ in single or double or back ticks
+ strings are immutable
+
+ string interpolation - template literals ${varname}
+ back tick we can use 
+ let name='john'
+ let greet='hello name'
+
+ also use for multi line string
+  let greet=`    Lorem ipsum d,
+   ratione.`
+
+how to iterate an string
+for loop
+for in 
+for off
+
+let str='hello world'
+for (i=0;i<str.length;i++){
+console.log(i)//indexes
+console.log(str[i])//values
+}
+
+for (i in str){
+ console.log(i)//indexes
+console.log(str[i])//values
+}
+
+for (i of str){
+    console.log(i)//values
+}
+
+methods
+1) length
+it is used to return the no of characters in a string
+console.log(str.length)
+
+2) at()
+it is used to return the value at particular index
+it also takes negative integers
+ let str='hello world'
+ console.log(str.at(0))//h
+ console.log(str.at(-1))//d
+
+ 3) charAt()
+ it is also used to return the value at particular
+ index but doesn't take negative values
+ let str='hello world'
+ console.log(str.charAt(0))//h
+ console.log(str.charAt(-1))//empty
+
+ 4) charCodeAt()
+ it is used to return the ascci value of a character
+ at specified index
+let str='hello world'
+
+//  hello
+//  gdiin
+
+ let str='hello world'
+ console.log(str.charCodeAt(0))//104
+ console.log(String.fromCharCode(65))//A
+
+ 5) slice 
+ it is used to slice out portion of a string
+and also takes negative values
+
+let str='javascript is amazing'
+console.log(str.slice(4,10))//script
+console.log(str.slice(-7))//amazing
+console.log(str.slice(-7,-3))//amaz
+
+6) substring
+it is same like slice but it considers negatives
+numbers as 0
+console.log(str.substring(4,10))//script
+console.log(str.substring(-7))//javascript is amazing'
+console.log(str.substring(-7,4))//java
+
+7) substr
+it is same like slice but it takes second parameter 
+as no of length of characters required
+
+console.log(str.substr(4,10))//script is 
+console.log(str.substr(-7,4))//amaz
+
+8) concat
+it is used to merge two or more strings
+let str='javascript is amazing'
+let data=' and react'
+console.log(str.concat(data,' and sql'))
+
+9) split 
+it is used to convert the string into an array
+by a separtor
+let str='javascript is amazing'
+console.log(str.split(' '))//['javascript', 'is', 'amazing']
+console.log(str.split(''))//['j', 'a', 'v', 'a', 's', 'c', 'r', 'i', 'p', 't', ' ', 'i', 's', ' ', 'a', 'm', 'a', 'z', 'i', 'n', 'g']amazing']
+console.log(str.split('a'))// ['j', 'v', 'script is ', 'm', 'zing']
+
+10) trim
+it is used to remove the whitespace from the 
+beginning and ending
+let str='     javascript     '
+console.log(str.trim())
+console.log(str.trim().length)
+
+11)
+console.log(str.toUpperCase())
+console.log(str.toLowerCase())
+
+12) replace
+it is used to create new string with a replaced content
+let str=' Javascript   java  '
+console.log(str.replace(/java/ig,'python'))
+ */
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
