@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="date" id="inp">
+    <button onclick="getcalc()">calc age</button>
+
+    <div class="child1"></div>
+    <div class="child2"></div>
+<script>
+/*
+date methods
+let d=new Date()
+
+get methods
+let d=new Date()
+console.log(d.getFullYear())//return year
+console.log(d.getMonth())//returns month index
+console.log(d.getDate())//return curren date
+console.log(d.getDay())//return day index
+console.log(d.getHours())
+console.log(d.getMinutes())
+console.log(d.getSeconds())
+
+let weeks=['sund','mon','tue']
+console.log(weeks[d.getDay()])//return year
+
+let months=['jan','feb','march']
+console.log(months[d.getMonth()])//feb
+
+console.log(d.toDateString())//Mon Feb 16 2026
+console.log(d.toLocaleDateString())//2/16/2026
+console.log(d.toTimeString())//12:45:43 GMT+0530 (India Standard Time)
+console.log(d.toLocaleTimeString())//12:45:43 PM
+
+setInterval(() => {
+let d=new Date()
+document.body.innerHTML=`<h1>${d.toLocaleTimeString()}</h1>`
+}, 1000);
+
+
+let d=new Date()
+let newdate=new Date()
+d.setFullYear(2000)
+d.setMonth(3)
+d.setDate(3)
+d.setHours(10)
+d.setMinutes(40)
+d.setSeconds(50)
+console.log(d)
+console.log(newdate.getFullYear()-d.getFullYear())
+*/
+function getcalc(){
+let inpdate=document.querySelector('#inp').value
+let olddate=new Date(inpdate)
+let curdate=new Date()
+let c1=document.querySelector('.child1')
+c1.innerHTML=curdate.getFullYear()-olddate.getFullYear()
+  
+let c2=document.querySelector('.child2')
+c2.innerHTML=Math.
+           floor((curdate-olddate)/(60*1000*60*24))
+
+}
+
+</script>
+    
+</body>
+</html>
