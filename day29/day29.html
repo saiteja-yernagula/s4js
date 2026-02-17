@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun()">click</button>
+    <a href="new.html">new link</a>
+<script>
+/*
+bom -browser object model
+it is collection of objects in the browser
+that allows javascript to interact with the browser
+
+1) window
+2) storage
+3) location
+4) history
+5) screen 
+6) navigators
+7) timers
+
+window objects
+1) window.alert()
+2) window.prompt()
+3) window.confirm('message')-it will returns true or false
+4) window.innerWidth
+5) window.innerHeight
+6) window.open()
+function fun(){
+    alert('hello')
+    window.open('https://www.programiz.com/javascript
+    /','_blank','width=150,height=150')
+}
+7) window.close()
+function fun(){
+    if(window.confirm("are you want to quit")){
+        window.close()
+    }
+}
+
+storage objects
+1) localstorage-limited to the device
+how to sent data to localstorage--1st page
+let data='raju'
+localStorage.setItem('name',data)
+
+how to get--2nd page
+localStorage.getItem(name)
+
+2) session storage-limited to one session
+// let data='raju'
+// localStorage.setItem('name',data)
+
+// let data1='tejesh'
+// sessionStorage.setItem('name1',data1)
+
+JSON.stringify()
+it is used to convert the javascript object into
+json object
+//in 1st page
+let obj={
+    name:'john',
+    age:23
+}
+localStorage.setItem('data',JSON.stringify(obj))
+
+JSON.parse()
+it is used to convert json object into js obj
+//in 2nd page
+let data=JSON.parse(localStorage.getItem('data'))
+document.body.innerHTML=data.name
+*/
+let obj={
+    name:'john',
+    age:23
+}
+
+localStorage.setItem('data',JSON.stringify(obj))
+
+
+</script>
+</body>
+</html>
