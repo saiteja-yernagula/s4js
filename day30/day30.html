@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <a href="new.html">new</a>
+    
+    <form action="">
+        <input type="text">
+        <input type="text">
+        <button type="submit">submit</button>
+    </form>
+<script>
+/*
+
+*/
+let form=document.querySelector('form')
+let arr=[]
+form.addEventListener('submit',(e)=>{
+    e.preventDefault()
+
+    let obj={
+        name:e.target[0].value,
+        age:e.target[1].value
+    }
+    arr.push(obj)
+ 
+    localStorage.setItem('students',JSON.stringify(arr))
+
+    form.reset()
+})
+</script> 
+</body>
+</html>

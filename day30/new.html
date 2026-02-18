@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="parent">
+
+    </div>
+    <script>
+        let data=JSON.parse(localStorage.getItem('students'))
+        console.log(data)
+        let parent=document.querySelector('.parent')
+
+        data.forEach((val)=>{
+            let child=document.createElement('div')
+            child.innerHTML=`
+            <h1>${val.name}</h1>
+            <h1>${val.age}</h1>
+        
+            `
+            parent.append(child)
+
+        })
+    </script>
+    
+</body>
+</html>
