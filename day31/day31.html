@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="show()">show notifications</button>
+    <ul>
+      <li>you got a offer 1</li>
+      <li>you got a offer 2</li>
+      <li>you got a offer 3</li>
+    </ul>
+
+    <button onclick="timfun()">timer</button>
+
+    <button onclick="fun()">load</button>
+    <div></div>
+    <script>
+      function fun() {
+        // let data='welcome to our page'
+        let data = [
+          "connecting to the server...","loading resources...", "almost done...","done", ];
+        let div = document.querySelector("div");
+        let c = 0;
+        let a = setInterval(() => {
+          //  div.innerHTML+=data[c]
+          div.innerHTML = data[c];
+          if (c == data.length - 1) {
+            clearInterval(a);
+          }
+          c++;
+        }, 1000);
+      }
+
+      
+      function show() {
+        let ul = document.querySelector("ul");
+        ul.style.display = "block";
+        setTimeout(() => {
+          ul.style.display = "none";
+        }, 2000);
+      }
+      function timfun() {
+        let div = document.querySelector("div");
+        let inp = prompt("enter a num");
+        div.innerText = inp;
+        let a = setInterval(() => {
+          inp--;
+          div.innerText = inp;
+          if (inp == 0) {
+            clearInterval(a);
+          }
+        }, 1000);
+      }
+
+      /*
+navigator screen history timers
+
+timing functions
+setTimeout(callback,timing)
+it is used to execute a block of after a specified duration
+
+a=setTimeout(()=>{
+console.log('hello')
+},2000)
+
+
+b=setInterval(callback,timing)
+it is used execute a block repeatedly for every specified duration
+
+setInterval(()=>{
+console.log('hello')
+},2000)
+
+to stop timers
+clearTimeout(a)
+clearInterval(b)
+
+
+
+*/
+    </script>
+  </body>
+</html>
