@@ -39,18 +39,18 @@ function three(){
 // three().then((data)=>{console.log(data)})
 
 // promise chaining
-// one().then((data)=>{
-//     console.log(data)
-//     return two()})
-//     .then((data)=>{
-//         console.log(data)
-//         return three()
-//     })
-//     .then((data)=>{
-//         console.log(data)
-//     }).catch((err)=>{
-//         console.log(err)
-//     })
+one().then((data)=>{
+    console.log(data)
+    return two()})
+    .then((data)=>{
+        console.log(data)
+        return three()
+    })
+    .then((data)=>{
+        console.log(data)
+    }).catch((err)=>{
+        console.log(err)
+    })
 
 // promise methods 
 // it will return the all the promises at a time
