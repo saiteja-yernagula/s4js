@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getd()">get data</button>
+    <button onclick="postd()">post data</button>
+<script>
+let url='http://localhost:3000/students'
+async function getd(){
+    let data=await fetch(url)
+    let finaldata=await data.json()
+    console.log(finaldata)
+}
+
+async function postd(){
+    let std={
+        name:'james',
+        age:29
+    }
+    let options={
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json"},
+        body:JSON.stringify(std)
+    }
+    let data=await fetch(url,options)
+}
+</script>
+</body>
+</html>
