@@ -7,19 +7,38 @@
 </head>
 <body>
     <button onclick="getd()">get data</button>
+    <div id="container"></div>
+
+    <input type="text" id="postinp1" placeholder="name">
+    <input type="text" id="postinp2" placeholder="age">
     <button onclick="postd()">post data</button>
+    <br>
+
+     <input type="text" id="patchinp1" placeholder="name">
+    <input type="text" id="patchinp2" placeholder="age">
+    <input type="text" id="patchid" placeholder="id">
+    <button onclick="patchd()">patch data</button> 
+    <button onclick="putd()">put data</button>
+
+     <input type="text" id="delid" placeholder="name">
+    
+    <button onclick="deld()">del data</button>
 <script>
 let url='http://localhost:3000/students'
 async function getd(){
     let data=await fetch(url)
     let finaldata=await data.json()
+    let container=document.querySelector('#container')
+    container.innerHTML=JSON.stringify(finaldata,null)
     console.log(finaldata)
 }
 
 async function postd(){
+    let inp1=document.getElementById('postinp1')
+    let inp2=document.getElementById('postinp2')
     let std={
-        name:'james',
-        age:29
+        name:inp1.value,
+        age:inp2.value
     }
     let options={
         method:"POST",
@@ -29,6 +48,57 @@ async function postd(){
     }
     let data=await fetch(url,options)
 }
+
+
+async function putd(){
+    let upddata={
+        city:'hyd'
+    }
+    let options={
+        method:"PUT",
+        headers: {
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(upddata)
+    }
+    let id=0
+   let url=`http://localhost:3000/students/${id}`
+   let data=await fetch(url,options)
+}
+
+
+async function patchd(){
+    let inp1=document.getElementById('patchinp1')
+    let inp2=document.getElementById('patchinp2')
+    let id=Number(document.getElementById('patchid').value)
+    let upddata={
+        name:inp1.value,
+        age:inp2.value
+    }
+    console.log(id)
+    let options={
+        method:"PUT",
+        headers: {
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify(upddata)
+    }
+   
+   let url=`http://localhost:3000/students/${id}`
+   let data=await fetch(url,options)
+}
+
+
+async function deld(){
+
+    let options={
+        method:"DELETE",
+    }
+    let id=document.getElementById('delid').value
+   let url=`http://localhost:3000/students/${id}`
+   let data=await fetch(url,options)
+}
+
 </script>
 </body>
 </html>
